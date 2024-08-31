@@ -1,0 +1,10 @@
+[package]
+name = "lib"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+burn = { version = "0", features = ["train", "wgpu", "vision"] }
+
+[target.'cfg(linux)'.dependencies]
+openssl = { version = "0.10" } # Needed for Ocacle Linux 9

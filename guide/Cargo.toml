@@ -1,0 +1,9 @@
+[package]
+name = "guide"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lib = { path = "../lib" }
+burn = { version = "0", features = ["train", "wgpu", "vision"] }
+clap = { version = "4", features = ["derive", "cargo"] }
